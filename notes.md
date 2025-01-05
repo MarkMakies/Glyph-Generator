@@ -12,6 +12,70 @@ VSC create virtual environment
   
 Install all dependencies at once
   * ```pip install -r requirements.txt``` 
+
+### using GIT
+cd to_project_dir
+git init
+
+git branch -m main
+
+
+**Track changes / staging files**
+git add src
+git add notes.md
+git add requirements.txt 
+
+**Commit changes**
+git commit -m "Just copied accross from Glow Cuboid directory"
+
+
+git status
+git log
+
+git add .gitignore
+git commit -m "Added .gitignore file"
+
+
+git add fname to get it into staging area
+git commit to save all those staged into repository
+
+
+
+git checkout main  - make sure we are on the main branch repository -> working directory
+
+git checkout -b color-experiment   - creates a new branch and switches to it
+- Edit files, then stage them:
+git add colorize_glyphs.py
+- Commit the changes:
+git add .
+git commit -m "Added initial colorizing code for experiment"
+
+If it works, switch to main branch and merge
+
+git checkout main
+git merge color-experiment
+Clean Up the Experimental Branch
+git branch -d color-experiment
+
+If It Doesn’t Work: Discard the Experiment
+
+git checkout main
+git branch -D color-experiment
+Start Fresh: Your main branch is untouched and remains in its stable state.
+
+
+Action  | 	Command
+---|---
+Create a new branch	| git checkout -b branch-name
+Switch branches |	git checkout branch-name
+Stage changes	| git add .
+Commit changes |	git commit -m "Commit message"
+Merge a branch into main |	git merge branch-name
+Delete a branch (merged) |	git branch -d branch-name
+Delete a branch (unmerged) |	git branch -D branch-name
+
+
+
 ---
 ### Source Code
 

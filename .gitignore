@@ -6,6 +6,6 @@ __pycache__/
 .venv/
 
 # Ignore large data files
-data/*.jpg
+data/
 
 .vscode/

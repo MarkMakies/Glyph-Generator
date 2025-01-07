@@ -3,10 +3,10 @@ import random
 import string
 
 # Constants
-INPUT_DIRECTORY = "/home/mark/Projects/Glow Cuboid/Glyphs/Unicode_Selected"
+INPUT_DIRECTORY = "//home/mark/Projects/Glyph Generator/data/fonts2"
 FILE_PREFIX = 'G-'
-FILE_SUFFIX = '-U.jpg'
-FILE_MASK = 'DDDDDDDD'  # File name structure: D = digit, L = letter
+FILE_SUFFIX = '-F.jpg'
+FILE_MASK = 'DDDDD'  # File name structure: D = digit, L = letter
 
 def generate_random_name(mask, prefix, suffix, existing_names):
     """Generate a unique random file name based on the given mask."""

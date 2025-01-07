@@ -8,4 +8,8 @@ __pycache__/
 # Ignore large data files
 data/
 
+notes.md
+compressor.py
+ccolourize.py  
+
 .vscode/

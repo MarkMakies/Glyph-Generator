@@ -3,13 +3,13 @@ import os
 import math
 
 # Parameters
-INPUT_PATH = "/home/mark/Projects/Glyph Generator/data/output/random" 
+INPUT_PATH = "/home/mark/Projects/Glyph Generator/data/output/glyphs" 
 OUTPUT_PATH = "/home/mark/Projects/Glyph Generator/data/output/sheets" 
 
 GLYPH_CANVAS_SIZE = (128, 128)  # Size for each glyph's canvas
-MOSAIC_ROWS = 8  # Number of rows in the mosaic
-MOSAIC_COLS = 8  # Number of columns in the mosaic
-MOSAIC_PADDING = 0  # Padding between glyphs and edges of the mosaic (in pixels)
+MOSAIC_ROWS = 48  # Number of rows in the mosaic
+MOSAIC_COLS = 64  # Number of columns in the mosaic
+MOSAIC_PADDING = 16  # Padding between glyphs and edges of the mosaic (in pixels)
 
 # Automatically calculate MOSAIC_SIZE
 MOSAIC_SIZE = (
@@ -50,7 +50,7 @@ def create_proof_sheets():
         # Save the mosaic sheet
         if not os.path.exists(OUTPUT_PATH):
             os.makedirs(OUTPUT_PATH)
-        mosaic_path = os.path.join(OUTPUT_PATH, f"Basic_Sheet_{sheet_idx + 1}.png")
+        mosaic_path = os.path.join(OUTPUT_PATH, f"Basic_Sheet_{sheet_idx + 1}.jpg")
         mosaic.save(mosaic_path, "PNG")
         print(f"Saved {mosaic_path}")
 

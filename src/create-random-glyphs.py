@@ -264,7 +264,7 @@ def matrix_to_image(r, g, b, output_file="output.png"):
     print(f"Image saved to {output_file}")
 
 # Generate and save multiple glyphs
-for i in range(100):
+for i in range(1000000):
 
     CLUSTER_SIZE = RI(4,16)
     MIN_NUM_STROKES = RI(2,10)

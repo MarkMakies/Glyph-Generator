@@ -25,7 +25,7 @@ This system is modular and can be used for artistic, functional, or experimental
 2. **Optionally Generate Glyphs from Fonts**:
    - Use `create-unicode-glyphs.py` to extract glyphs from system-installed fonts. The glyphs are created on a 14x14 grid with a 1-cell black padding around the edges (16x16 canvas).
    - I suggest using the NotoSans, it covers nearly all languages and scripts, it's open-source and free, cross-platform and widely avaialble.
-   - If you use then for training, choose those you like the look of.
+   - If you use the font glyphs for training, choose those most suitable for your application.
 
 3. **Randomly Rename Files**:
    - Use `file-random-rename.py` to randomize file names. This is particularly useful to ensure glyphs appear in a random order when generating proof sheets later.
@@ -33,10 +33,10 @@ This system is modular and can be used for artistic, functional, or experimental
 4. **Train the ML Model**:
    - Start with manually classified images (you can use `manual-classify.py` to help with this):
      - At least 1,000 "good" glyphs (e.g., from font-based generation).
-     - At least 1,000 "bad" glyphs (e.g., random glyphs), as less than 1% of these will be good you can just copy and paste.
+     - At least 1,000 "bad" glyphs (e.g., random glyphs, as less than 1% of these will be good you can just copy and paste).
    - Use `train.py` to train a machine learning model. 
-   - Train the model with low epochs (e.g., 3) to avoid overfitting.
-   - check result charts to ensure validation accuracy is good. If it starts dropping lower ephocs value, if it is still increasing you can increase epochs.
+   - Train the model with low epochs (e.g., 5) to avoid overfitting.
+   - check result charts to ensure validation accuracy is good. If it starts dropping, then lower ephocs value, if it is still increasing you can increase epochs.  For my datasets 3 is the sweat spot
 
 5. **Classify Glyphs Automatically**:
    - Use `auto-classify-directory.py` to classify glyphs based on the trained model. Glyphs are moved into "good" or "bad" directories based on a classification threshold (e.g., 99% probability).

@@ -5,8 +5,8 @@ import math
 import random
 
 # Paths
-INPUT_PATH = "/home/mark/Projects/Glyph Generator/data/output/glyphs"
-OUTPUT_PATH = "/home/mark/Projects/Glyph Generator/data/output/sheets_test"
+INPUT_PATH = "/home/mark/Projects/glyph-generator/data/output/glyphs"
+OUTPUT_PATH = "/home/mark/Projects/glyph-generator/data/output/sheets"
 
 # Glyph and Mosaic Configuration
 GLYPH_CANVAS_SIZE = (512, 512)  # Size for each glyph's canvas, original glyphs 128x128

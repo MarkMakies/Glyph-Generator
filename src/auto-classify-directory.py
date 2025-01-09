@@ -5,10 +5,10 @@ from tensorflow.keras.models import load_model # type: ignore
 from tensorflow.keras.preprocessing.image import load_img, img_to_array # type: ignore
 
 # Parameters
-MODEL_PATH = "/home/mark/Projects/Glyph Generator/data/models/glyph_classifier3.keras"  # Path to the trained model
-INPUT_DIRECTORY = "/home/mark/Projects/Glyph Generator/data/output/random"   # Directory with images to classify
-GOOD_DIR = "/home/mark/Projects/Glyph Generator/data/output/random_Good"  # Directory for classified 'good' images
-BAD_DIR = "/home/mark/Projects/Glyph Generator/data/output/random_Bad"    # Directory for classified 'bad' images
+MODEL_PATH = "/home/mark/Projects/glyph-generator/data/models/glyph-classifier3.keras"  # Path to the trained model
+INPUT_DIRECTORY = "/home/mark/Projects/glyph-generator/data/output/random"   # Directory with images to classify
+GOOD_DIR = "/home/mark/Projects/glyph-generator/data/output/glyphs"  # Directory for classified 'good' images
+BAD_DIR = "/home/mark/Projects/glyph-generator/data/output/bad-glyphs"    # Directory for classified 'bad' images
 IMAGE_SIZE = (128, 128)   # Input image size used for training (height and width)
 
 # Load the trained model

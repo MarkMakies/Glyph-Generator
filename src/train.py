@@ -5,7 +5,8 @@ import matplotlib.pyplot as plt
 # Constants
 IMAGE_SIZE = (128, 128)
 BATCH_SIZE = 32
-DATASET_DIR = "Dataset"
+DATASET_DIR = "/home/mark/Projects/glyph-generator/data/input/dataset" # in this dir there should be 'good' and 'bad' folders
+MODEL_FILE = "/home/mark/Projects/glyph-generator/data/models/glyph-classifier3.keras"
 
 # Preprocess the images
 datagen = ImageDataGenerator(
@@ -57,8 +58,8 @@ history = model.fit(
 )
 
 # Save the trained model
-model.save("glyph_classifier3.keras")
-print("Model saved as glyph_classifier.keras")
+model.save(MODEL_FILE)
+print("Model saved as glyph_classifier3.keras")
 
 # Model summary
 model.summary()

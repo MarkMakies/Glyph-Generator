@@ -3,7 +3,7 @@ import random
 import string
 
 # Constants
-INPUT_DIRECTORY = "//home/mark/Projects/Glyph Generator/data/fonts2"
+INPUT_DIRECTORY = "/home/mark/Projects/glyph-generator/data/input/glyphs-unclassified/"
 FILE_PREFIX = 'G-'
 FILE_SUFFIX = '-F.jpg'
 FILE_MASK = 'DDDDD'  # File name structure: D = digit, L = letter

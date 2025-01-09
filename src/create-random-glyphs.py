@@ -3,7 +3,7 @@ from collections import deque
 from PIL import Image
 
 # Constants
-OUTPUT_PATH = "/home/mark/Projects/Glyph Generator/data/output/random" 
+OUTPUT_PATH = "/home/mark/Projects/glyph-generator/data/input/glyphs-unclassified/" 
 
 NUM_PIXELS = 256
 GRID_SIZE = 16

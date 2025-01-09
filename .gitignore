@@ -1,15 +1,13 @@
-# Ignore Python bytecode files
-*.pyc
-__pycache__/
-
-# Ignore virtual environment folder
+# Ignore system files
 .venv/
+.vscode/
 
 # Ignore large data files
 data/
 
+# private notes
 notes.md
-compressor.py
-ccolourize.py  
 
-.vscode/
+#stuff in development
+mcu/
+dev/

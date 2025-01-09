@@ -4,8 +4,8 @@ import os
 import shutil
 
 # Directories
-INPUT_DIRECTORY = "/home/mark/Projects/Glyph Generator/data/output/glyphs"
-DUPLICATE_DIRECTORY = "/home/mark/Projects/Glyph Generator/data/output/dupes"  # Directory to move duplicates
+INPUT_DIRECTORY = "/home/mark/Projects/glyph-generator/data/input/glyphs-unclassified/"
+DUPLICATE_DIRECTORY = "/home/mark/Projects/glyph-generator/data/output/dupes"  # Directory to move duplicates
 
 # Ensure the duplicate directory exists
 os.makedirs(DUPLICATE_DIRECTORY, exist_ok=True)

@@ -3,7 +3,7 @@ import unicodedata
 
 # Constants
 UNICODE_FONT = "/usr/share/fonts/truetype/noto/NotoSans-Regular.ttf"
-OUTPUT_DIR = "/home/mark/Projects/Glyph Generator/data/output/glyphs_fonts"
+OUTPUT_DIR = "/home/mark/Projects/glyph-generator/data/input/glyphs-unclassified/"
 
 UNICODE_START = 0x0021
 UNICODE_END = 0x02a7

@@ -3,8 +3,8 @@ import os
 import math
 
 # Parameters
-INPUT_PATH = "/home/mark/Projects/Glyph Generator/data/output/glyphs" 
-OUTPUT_PATH = "/home/mark/Projects/Glyph Generator/data/output/sheets" 
+INPUT_PATH = "/home/mark/Projects/glyph-generator/data/output/glyphs" 
+OUTPUT_PATH = "/home/mark/Projects/glyph-generator/data/output/sheets" 
 
 GLYPH_CANVAS_SIZE = (128, 128)  # Size for each glyph's canvas
 MOSAIC_ROWS = 48  # Number of rows in the mosaic

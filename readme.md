@@ -4,7 +4,7 @@ The **Glyph Generator** project began as an effort to create visually compelling
 
 This system is modular and can be used for artistic, functional, or experimental purposes, such as creating custom art or visualizations.
 
-![Artistic Glyph Example](images/Artistic-Sheet-1.jpg)
+![Artistic Glyph Example](samples/Artistic-Sheet-1.jpg)
 
 ---
 

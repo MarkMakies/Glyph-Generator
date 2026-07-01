@@ -135,3 +135,5 @@ This project demonstrates how AI can aid in artistic creation. Potential future 
   * Generating glyphs using generative adversarial networks (GANs).
   * Creating interactive tools for customizing glyph styles.
   * Expanding the dataset to include glyphs from more fonts and languages.
+
+*More projects: https://makies.au*
